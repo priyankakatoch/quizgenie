@@ -1,0 +1,199 @@
+/* Login Page Styles */
+.login-body {
+    background: linear-gradient(135deg, #0057b8, #003c8f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+    background: linear-gradient(135deg, #0066cc, #0099ff);
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 102, 204, 0.4);
+    border: 1px solid rgba(0, 153, 255, 0.3);
+}
+
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.welcome-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+
+.sound-icon, .heart-icon {
+    color: white;
+    font-size: 1.4rem;
+    opacity: 0.8;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.input-group {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group i {
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 15px;
+}
+
+.input-group input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.sign-in-btn {
+    background: linear-gradient(to right, #0066cc, #0099ff);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 10px 0 25px;
+    transition: all 0.3s;
+    box-shadow: 0 0 15px rgba(0, 102, 204, 0.5);
+}
+
+.sign-in-btn:hover {
+    box-shadow: 0 0 20px rgba(0, 102, 204, 0.7);
+    transform: translateY(-2px);
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+.login-options a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login-options a:hover {
+    color: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.or-text {
+    padding: 0 15px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* For the Login button on index.html */
+.login-btn {
+    background: #2d1b4e;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(110, 87, 224, 0.4);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    transition: all 0.3s;
+}
+
+.login-btn:hover {
+    box-shadow: 0 0 20px rgba(131, 103, 235, 0.7);
+    transform: translateY(-2px);
+}
+
+/* Glow effect for handwritten text */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(131, 103, 235, 0.6);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.welcome-text, .login-btn {
+    animation: glow 3s infinite;
+} 

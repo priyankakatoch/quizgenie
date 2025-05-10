@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4a90e2" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#1e5799" stop-opacity="0.8"/>
+        </linearGradient>
+    </defs>
+    <circle cx="100" cy="100" r="90" fill="url(#glow)" opacity="0.3"/>
+    <circle cx="100" cy="100" r="80" fill="#2980b9" stroke="#3498db" stroke-width="3" stroke-opacity="0.8"/>
+    <circle cx="100" cy="100" r="65" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="410" stroke-dashoffset="0">
+        <animate attributeName="stroke-dashoffset" from="410" to="0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="100" y="115" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#ffffff" text-anchor="middle">Q</text>
+    <path d="M150,135 L130,120 Q160,105 150,75 Q140,45 110,45 Q80,45 70,75 L90,75 Q95,60 110,60 Q125,60 130,75 Q135,90 120,100 L105,110 L105,125 L120,125 L120,115" 
+          fill="none" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+</svg> 
